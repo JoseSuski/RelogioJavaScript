@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio Digital</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section class="times">
+            <div data-timezone="America/Sao_Paulo">
+                <h2>São Paulo</h2>
+                <output>00:00:00</output>
+            </div>
+            <div data-timezone="Europe/London">
+                <h2>Londres</h2>
+                <output>00:00:00</output>
+            </div>
+            <div data-timezone="America/New_York">
+                <h2>Nova Iorque</h2>
+                <output>00:00:00</output>
+            </div>
+            <div data-timezone="Australia/Brisbane">
+                <h2>Brisbane</h2>
+                <output>00:00:00</output>
+            </div>
+            <div data-timezone="Europe/Moscow">
+                <h2>Moscou</h2>
+                <output>00:00:00</output>
+            </div>
+            <div data-timezone="Europe/Madrid">
+                <h2>Madri</h2>
+                <output>00:00:00</output>
+            </div>
+            
+        </section>
+    </main>
+
+    <script src="https://moment.github.io/luxon/global/luxon.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
