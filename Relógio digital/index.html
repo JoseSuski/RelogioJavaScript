@@ -37,8 +37,31 @@
                 <h2>Madri</h2>
                 <output>00:00:00</output>
             </div>
-            
         </section>
+        <div class="addTz">
+            <button class="btnAdd" id="btnAdd" type="button">Adicionar Fuso Horário</button>
+            <div class="modal" id="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Selecione o Fuso Horário</h3>
+                <select id="continentSelect">
+                  <option value="" selected disabled>Selecione um continente</option>
+                  <option value="Africa">África</option>
+                  <option value="America">América</option>
+                  <option value="Asia">Ásia</option>
+                  <option value="Australia">Austrália</option>
+                  <option value="Europe">Europa</option>
+                  <option value="Pacific">Oceania</option>
+                  <!-- Outras opções de continentes -->
+                </select>
+                <select id="regionSelect" disabled>
+                  <option value="" selected disabled>Selecione uma região</option>
+                  <!-- As opções de região serão preenchidas dinamicamente com JavaScript -->
+                </select>
+                <button id="confirmButton" type="button">Confirmar</button>
+              </div>
+            </div>
+          </div>
     </main>
 
     <script src="https://moment.github.io/luxon/global/luxon.min.js"></script>
